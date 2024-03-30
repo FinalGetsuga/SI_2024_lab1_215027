@@ -1,0 +1,39 @@
+Почнувајќи од 4-ти чекор во вежбата:
+
+4.  git init - Иницијализација на празен GIT репо.
+5.  git remote add origin - Поврзување на локалниот репозиториум со оддалечениот репозиториум
+6.  git add README.md -> git commit -m "Initial commit" - Додавање на фајлот и негов commit со порака Initial commit
+7.  git add . - додавање на сите три .java фајлови во фаза staged и tracked  
+    git commit -m "Add starter code" - commit на .java фајловите со порака Add starter code
+8.  git push -u master origin - синхронизација на гранката master со оддалечениот репозиториум.
+9.  git branch bug1 / git branch bug2 - креирање нови две гранки
+10. git checkout bug1 - префрлување на гранката bug1
+11. После поправање на грешката во методот filterOddLengthStrings во SILab1_1 правиме git add SILab1_1.java
+    и потоа git commit -m "Fix wrong condition in filterOddLengthStrings"
+12. git checkout bug2 - префрлување на гранката bug2
+13. После поправање на грешката во методот makeBigStringFrom во SILab1_2 правиме git add SILab1_2.java
+    и потоа git commit -m "Fix wrong condition in makeBigStringFrom".
+14. git checkout bug1 - префрлување на гранката bug1
+15. После додавање повик до статичкиот метод filterOddLengthStrings правиме git add SILab1Main.java
+    и потоа git commit -m "Call method filterOddLengthStrings in main class"
+16. git checkout bug2 - префрлување на гранката bug2
+17. После додавање повик до статичкиот метод makeBigStringFrom правиме git add SILab1Main.java
+    и потоа git commit -m "Call method makeBigStringFrom in main class"
+18. git push origin master bug1 bug2 - синхронизација на сите гранки со оддалечениот репозиториум
+19. git checkout master - префрлување на гранката master
+20. git merge bug1 - Спојување на гранката bug1 кон гранката master(нема конфликт)
+21. git push origin master bug1 bug2 - синхронизација на сите гранки со оддалечениот репозиториум
+22. git checkout bug2 - префрлување на гранката bug2
+23. git rebase master - правење rebase спрема гранката master(има конфликт).Избирање на еден од можните начини за решавање
+    на конфликтот. После решавање на конфликот извршуваме git add SILab1Main.java и продолжуваме со rebase со командата
+    git rebase --continue.
+24. git checkout master - префрлување на гранката master
+25. git merge bug2 - Спојување на гранката bug2 кон гранката master(нема конфликт)
+26. git push origin master bug1 bug2 - синхронизација на сите гранки со оддалечениот репозиториум(Има проблем со bug2)
+27. git push --force origin bug2 - Forced update на гранката bug2.
+28. git --no-pager log > log.txt - Додавање на логовите во текст документ / git add log.txt / git commit -m "Final commit"
+    Додавање на документацијата: git add 215027.txt / git commit -m "Final commit"
+29. git push origin master bug1 bug2 - синхронизација на сите гранки со оддалечениот репозиториум
+ 
+
+	 
